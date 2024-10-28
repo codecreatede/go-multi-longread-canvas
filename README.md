@@ -3,6 +3,7 @@
 - multi-trimmomatic for the long reads, no heap memory allocation required, runs on goroutines and later adding the waitgroup.
 - in this version, it supports the multiple patterns as in the last release of trimmomatic.
 - parsed 100GB fastq file in few seconds. 
+- check the multipattern file for how to define the pattern.
 ```
 ╭─gauavsablok@gauravsablok ~/Desktop/go/go--multi-longread-canvas ‹main●›
 ╰─$ go run main.go -h
