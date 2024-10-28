@@ -1,12 +1,10 @@
-# go-longread-canvas
+# go-multi-longread-canvas
 
-- trimmomatic for the long reads, no heap memory allocation required, runs on goroutines and later adding the waitgroup.
-- uses the same as a single line one pattern only file, see the pattern.txt as how to define the pattern. 
+- multi-trimmomatic for the long reads, no heap memory allocation required, runs on goroutines and later adding the waitgroup.
+- in this version, it supports the multiple patterns as in the last release of trimmomatic.
 - parsed 100GB fastq file in few seconds. 
-- give a pattern files and ports the goroutines for the long reads. 
-
 ```
-╭─gauavsablok@gauravsablok ~/Desktop/go/go-longread-canvas ‹main●›
+╭─gauavsablok@gauravsablok ~/Desktop/go/go--multi-longread-canvas ‹main●›
 ╰─$ go run main.go -h
 look for the matching patterns
 
@@ -22,7 +20,7 @@ exit status 1
 -detailed usage
 
 ```
-╭─gauavsablok@gauravsablok ~/Desktop/go/go-longread-canvas ‹main●›
+╭─gauavsablok@gauravsablok ~/Desktop/go/go-multi-longread-canvas ‹main●›
 ╰─$ go run main.go -L sample.fastq -P pattern.txt
 The canavssed reads have been written
 exit status 1
